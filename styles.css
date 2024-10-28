@@ -1,0 +1,149 @@
+body {
+    background-color: #f2f0ea;
+    font-family: 'Alegreya';
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Start from the bottom of the text */
+    height: 2px; /* Thickness of the underline */
+    width: 100%; /* Full width of the text */
+    background-color: black; /* Color of the underline */
+    transform: scaleX(0); /* Initially scale to 0 (hidden) */
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+
+
+
+
+nav a {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.section {
+    padding: 20px 0;
+}
+
+.section h2 {
+    font-size: 2em;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.section p {
+    font-size: 1.1em;
+    font-weight: 150;
+    line-height: 1.6;
+}
+
+.home-image {
+    display: block; 
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive columns */
+    gap: 10px; /* Space between items */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.flex-item {
+    flex: 1 1 200px; /* Grow, shrink, and set a base width */
+    margin: 10px; /* Space between items */
+}
+
+
+.stuff{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.lists{
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1em;
+    font-weight: 50;
+}
+
+
+
+.footer {
+    padding: 20px 0;
+    text-align: center; /* Center the text */
+    border-top: 2px solid #e91e63; /* Top border for style */
+}
+
+
+
+.footer-content {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between elements */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1em; /* Increase font size */
+}
+
+.footer a {
+    color: #e91e63; /* Icon color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+
+
+
+
